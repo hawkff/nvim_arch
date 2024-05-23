@@ -130,6 +130,11 @@ local plugins = {
     },
 
     {
+        "nvim-neotest/nvim-nio", -- for dap-ui
+    },
+
+
+    {
         "rcarriga/nvim-dap-ui",
         dependencies = { "mfussenegger/nvim-dap" },
         lazy = true,
