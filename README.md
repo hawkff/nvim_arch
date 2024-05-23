@@ -9,3 +9,5 @@ install unzip
 
 alias nvim='NVIM_APPNAME=nvim_arch nvim'
 
+uncomment ensure installed
+
