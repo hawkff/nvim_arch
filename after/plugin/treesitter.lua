@@ -20,3 +20,8 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
+
+-- Filetype detection for Hyprlang
+vim.filetype.add({
+  pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+})

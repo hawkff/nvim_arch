@@ -40,8 +40,8 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 
 vim.keymap.set("n", "<leader>px", "<cmd>!chmod +x %<CR>", { silent = true, desc = "Make current file executable" })
 
-vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/hawky/lazy.lua<CR>", { desc = "Edit lazy.lua file" })
-vim.keymap.set("n", "<leader>vps", "<cmd>e ~/.config/nvim/after/plugin<CR>", { desc = "Plugins config folder" })
+vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim_arch/lua/hawky/lazy.lua<CR>", { desc = "Edit lazy.lua file" })
+vim.keymap.set("n", "<leader>vps", "<cmd>e ~/.config/nvim_arch/after/plugin<CR>", { desc = "Plugins config folder" })
 vim.keymap.set("n", "<leader>vpt", "<cmd>e ~/.config/tmux/tmux.conf<CR>", { desc = "Tmux config folder" })
 
 vim.keymap.set({ "n", "v" }, "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>", { desc = "Make it rain" })

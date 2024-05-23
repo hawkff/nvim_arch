@@ -161,6 +161,14 @@ local plugins = {
     {
         "AndreM222/copilot-lualine",
     },
+
+    {
+        "elkowar/yuck.vim",
+    },
+
+    {
+         {"eraserhd/parinfer-rust", build = "cargo build --release"},
+    },
 }
 
 require("lazy").setup(plugins, {})

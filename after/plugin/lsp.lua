@@ -67,6 +67,20 @@ vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
         style = 'minimal',  -- Maintain minimal style for hover as well
     }
 )
+
+----------------------------------------------------------------------
+-- Hyprlang LSP
+vim.api.nvim_create_autocmd({'BufEnter', 'BufWinEnter'}, {
+		pattern = {"*.hl", "hypr*.conf"},
+		callback = function(event)
+				print(string.format("starting hyprls for %s", vim.inspect(event)))
+				vim.lsp.start {
+						name = "hyprlang",
+						cmd = {"hyprls"},
+						root_dir = vim.fn.getcwd(),
+				}
+		end
+})
 ----------------------------------------------------------------------
 
 -- an attempt to install OpenGL LSP
